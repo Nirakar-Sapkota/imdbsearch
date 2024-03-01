@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* background: linear-gradient(45deg, rgba(95, 3, 3, 0.831), rgba(10, 116, 10, 0.852), rgba(128, 0, 128, 0.74));
+    height:100vh; */
+    background:rgba(0, 0, 0, 0.949);
+    margin:0;
+}
+.nav{
+    display:flex;
+    background-color: rgba(93, 4, 4, 0.301);
+    color:white;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    height:95px;
+}
+.nav>h1{
+    margin-right: -5px;
+}
+
+.search{
+    display: block;
+    margin-left:25em;
+    font-size: 25px;;
+    padding:10px;
+}
+.tiles{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)) ;/* this line helps create a responsive grid layout*/
+  grid-template-rows: auto  ;
+  color:white;
+  padding:15px;
+  grid-gap: 1em;
+  background-color: rgba(35, 32, 32, 0.43);
+  justify-content: center;
+  transition:all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow:2px 5px 5px 5px rgba(226, 226, 226, 0.019);
+  
+  }
+
+.tiles:hover{
+    transform: translateY(-5px);
+    box-shadow:2px 5px 5px 10px rgba(146, 244, 0, 0.201);
+    
+  }
+
+.info>img{
+    width:250px;  
+    cursor: pointer;  
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:15px;
+
+
+}
+.info>h1{
+    align-items: center;
+    justify-content: center;
+}
+.info>p{
+    font-size: 20px;
+}
